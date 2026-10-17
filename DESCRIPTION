@@ -45,6 +45,6 @@ Roxygen: list(markdown = TRUE)
 Config/testthat/edition: 3
 Config/roxygen2/version: 8.0.0
 NeedsCompilation: no
-Packaged: 2026-10-17 15:59:08 UTC; z3437171
+Packaged: 2026-10-17 16:19:49 UTC; z3437171
 Author: Shinichi Nakagawa [aut, cre, cph]
 Maintainer: Shinichi Nakagawa <itchyshin@gmail.com>
