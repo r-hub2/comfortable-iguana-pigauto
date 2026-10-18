@@ -343,6 +343,10 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 
 <div id="start-here" class="section level2">
 <h2>Start here</h2>
+<p>These examples use functions and defaults from pigauto 0.11.0. Check
+<code>packageVersion(&quot;pigauto&quot;)</code>: if CRAN has an earlier version,
+use the GitHub installation described below before following this
+workflow.</p>
 <p>The beginner workflow reads files, checks them before fitting, and
 keeps the completed-data, diagnostic-prediction, uncertainty, and
 inference roles separate.</p>
@@ -448,14 +452,19 @@ these encode phylogenetic clusters at multiple scales.</li>
 </div>
 <div id="installation" class="section level2">
 <h2>Installation</h2>
+<p>The CRAN release can lag behind the GitHub version described on this
+site. Check your installed version before running the examples
+above.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="co"># CRAN release</span></span>
 <span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;pigauto&quot;</span>)</span>
-<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="co"># Development version</span></span>
-<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a>pak<span class="sc">::</span><span class="fu">pak</span>(<span class="st">&quot;itchyshin/pigauto&quot;</span>)</span>
-<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a><span class="co"># Install the torch runtime only if you plan to use gnn = TRUE</span></span>
-<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a>torch<span class="sc">::</span><span class="fu">install_torch</span>()</span></code></pre></div>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="fu">packageVersion</span>(<span class="st">&quot;pigauto&quot;</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a><span class="co"># GitHub version, if CRAN has an earlier version</span></span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a><span class="co"># install.packages(&quot;pak&quot;) # once, if needed</span></span>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a>pak<span class="sc">::</span><span class="fu">pak</span>(<span class="st">&quot;itchyshin/pigauto&quot;</span>)</span>
+<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a><span class="co"># Install the torch runtime only if you plan to use gnn = TRUE</span></span>
+<span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a>torch<span class="sc">::</span><span class="fu">install_torch</span>()</span></code></pre></div>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">library</span>(pigauto)</span>
 <span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="fu">library</span>(ape)</span></code></pre></div>
 </div>
